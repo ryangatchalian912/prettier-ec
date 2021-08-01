@@ -1,0 +1,32 @@
+# EditorConfig is awesome:
+# https://editorconfig.org
+
+# Topmost EditorConfig file
+root = true
+
+# Options supported by Prettier
+[*]
+charset = utf-8
+end_of_line = lf
+max_line_length = 80
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+[{package.json,package-lock.json}]
+max_line_length = off
+
+[*.md]
+# Don't trim trailing whitespace in Markdown (they are used to force line breaks)
+max_line_length = 120
+trim_trailing_whitespace = false
+
+# 4-space indentation
+[*.py]
+indent_style = space
+indent_size = 4
+
+# Tab indentation (no size specified)
+[Makefile]
+indent_style = tab
