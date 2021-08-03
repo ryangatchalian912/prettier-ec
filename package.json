@@ -22,4 +22,7 @@
     "url": "https://github.com/ryangatchalian912/prettier-ec/issues"
   },
   "homepage": "https://github.com/ryangatchalian912/prettier-ec#readme",
+  "devDependencies": {
+    "prettier": "2.3.2"
+  }
 }
