@@ -1,3 +1,7 @@
-# Ignore artifacts:
-build
-coverage
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# CI/CD artifacts
+build/
+coverage/
