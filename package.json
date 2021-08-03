@@ -1,0 +1,25 @@
+{
+  "name": "prettier-ec",
+  "version": "1.0.0",
+  "description": "Reference configuration for Prettier and EditorConfig. It also includes stylelint and ESLint integration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryangatchalian912/prettier-ec.git"
+  },
+  "keywords": [
+    "prettier",
+    "editorconfig",
+    "stylelint",
+    "eslint"
+  ],
+  "author": "Ryan Gatchalian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryangatchalian912/prettier-ec/issues"
+  },
+  "homepage": "https://github.com/ryangatchalian912/prettier-ec#readme",
+}
