@@ -1,17 +1,21 @@
 # prettier-ec
+
 ---
+
 page_type: sample
 languages:
+
 - csharp
-products:
+  products:
 - dotnet
-description: "Add 150 character max description"
-urlFragment: "update-this-to-unique-url-stub"
+  description: "Add 150 character max description"
+  urlFragment: "update-this-to-unique-url-stub"
+
 ---
 
 # Official Microsoft Sample
 
-<!-- 
+<!--
 Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
 
 Guidance on onboarding samples to docs.microsoft.com/samples: https://review.docs.microsoft.com/help/onboard/admin/samples/process/onboarding?branch=master
@@ -26,7 +30,7 @@ Give a short description for your sample here. What does it do and why is it imp
 Outline the file contents of the repository. It helps users navigate the codebase, build configuration and any related assets.
 
 | File/folder       | Description                                |
-|-------------------|--------------------------------------------|
+| ----------------- | ------------------------------------------ |
 | `src`             | Sample source code.                        |
 | `.gitignore`      | Define what to ignore at commit time.      |
 | `CHANGELOG.md`    | List of changes to the sample.             |
@@ -52,7 +56,7 @@ Provide users with more context on the tools and services used in the sample. Ex
 
 ## Contributing
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
+This project welcomes contributions and suggestions. Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
 the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
 
