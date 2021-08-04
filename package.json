@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/ryangatchalian912/prettier-ec#readme",
   "devDependencies": {
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.1",
     "prettier": "2.3.2"
   }
 }
