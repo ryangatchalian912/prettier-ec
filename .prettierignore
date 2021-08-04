@@ -5,3 +5,6 @@ jspm_packages/
 # CI/CD artifacts
 build/
 coverage/
+
+# husky/lint-staged hooks
+husky/
