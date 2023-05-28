@@ -14,19 +14,68 @@ trim_trailing_whitespace = true
 indent_style = space
 indent_size = 2
 
+# Makefiles always use tabs for indentation
+# Tab indentation (no size specified)
+# @see https://openjdk.org/groups/build/doc/code-conventions.html
+[Makefile]
+indent_style = tab
+
+# The JSON files contain newlines inconsistently
+[*.json]
+indent_size = 2
+
 [{package.json,package-lock.json}]
 max_line_length = off
+indent_size = 2
 
+# Minified JavaScript files shouldn't be changed
+[**.min.js]
+insert_final_newline = ignore
+indent_style = ignore
+
+# Minified CSS files shouldn't be changed
+[**.min.css]
+insert_final_newline = ignore
+indent_style = ignore
+
+# Don't trim trailing whitespace in Markdown (they are used to force line breaks).
+# Do not use two-space indentation for any level of list items. While these
+# work in some contexts, they are not predictable.
+# @see https://docs.newrelic.com/docs/style-guide/structure/styleguide-markup-indentation/#two-space
 [*.md]
-# Don't trim trailing whitespace in Markdown (they are used to force line breaks)
 max_line_length = 120
 trim_trailing_whitespace = false
+indent_size = 4
 
-# 4-space indentation
+# Use 4-space indentation for Python files
+# @see https://peps.python.org/pep-0008/#code-lay-out
+# @see https://peps.python.org/pep-0020/
 [*.py]
+max_line_length = 79
 indent_style = space
 indent_size = 4
 
-# Tab indentation (no size specified)
-[Makefile]
+[*.sql]
+max_line_length = off
+indent_size = 2
+
+[*.{yml,yaml}]
+indent_size = 2
+
+[docker-compose.yml]
+indent_size = 4
+
+# Batch files use tabs for indentation
+[*.{bat,cmd}]
 indent_style = tab
+
+# PowerShell files
+# @see https://learn.microsoft.com/en-us/powershell/scripting/community/contributing/general-markdown?view=powershell-7.3
+[*.ps1]
+max_line_length = 100
+indent_size = 2
+
+# Shell script files
+[*.sh]
+end_of_line = lf
+indent_size = 2
