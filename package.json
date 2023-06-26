@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "commitmsg": "commit"
+    "commitmsg": "commit",
+    "audit": "npm audit --registry=https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
