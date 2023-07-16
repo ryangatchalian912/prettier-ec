@@ -52,6 +52,10 @@ indent_size = 2
 [{*.html,*.htm}]
 indent_size = 2
 
+# @see https://google.github.io/styleguide/xmlstyle.html
+[{*.xml,*.svg}]
+indent_size = 2
+
 # PHP files MUST follow the following coding style guides:
 #   - PSR-1
 #   - PSR-2 (extends PSR-1)
