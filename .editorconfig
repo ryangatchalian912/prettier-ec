@@ -28,6 +28,11 @@ indent_size = 2
 max_line_length = off
 indent_size = 2
 
+# CSV/PSV/TSV files shouldn't be changed
+[**.csv,**.psv,**.tsv]
+insert_final_newline = ignore
+indent_style = ignore
+
 # Minified JavaScript files shouldn't be changed
 [**.min.js]
 insert_final_newline = ignore
