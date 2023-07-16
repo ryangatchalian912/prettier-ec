@@ -47,6 +47,11 @@ indent_size = 2
 [{*.css,*.less,*.sass,*.scss}]
 indent_size = 2
 
+# @see https://google.github.io/styleguide/htmlcssguide.html
+# @see https://developers.google.com/style/html-formatting
+[{*.html,*.htm}]
+indent_size = 2
+
 # PHP files MUST follow the following coding style guides:
 #   - PSR-1
 #   - PSR-2 (extends PSR-1)
