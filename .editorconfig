@@ -38,6 +38,15 @@ indent_style = ignore
 insert_final_newline = ignore
 indent_style = ignore
 
+# PHP files MUST follow the following coding style guides:
+#   - PSR-1
+#   - PSR-2 (extends PSR-1)
+#   - PSR-12 (extends/replaces PSR-2, requires PSR-1)
+#   - PER 2.0 (extends/replaces PSR-12, requires PSR-1)
+[*.php]
+max_line_length = off
+indent_size = 4
+
 # Don't trim trailing whitespace in Markdown (they are used to force line breaks).
 # Do not use two-space indentation for any level of list items. While these
 # work in some contexts, they are not predictable.
@@ -52,7 +61,6 @@ indent_size = 4
 # @see https://peps.python.org/pep-0020/
 [*.py]
 max_line_length = 79
-indent_style = space
 indent_size = 4
 
 [*.sql]
