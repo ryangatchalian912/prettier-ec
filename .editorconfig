@@ -43,6 +43,10 @@ indent_style = ignore
 [{*.js,*.jsx,*.ts,*.tsx,*.cjs,*.mjs}]
 indent_size = 2
 
+# @see https://github.com/airbnb/css
+[{*.css,*.less,*.sass,*.scss}]
+indent_size = 2
+
 # PHP files MUST follow the following coding style guides:
 #   - PSR-1
 #   - PSR-2 (extends PSR-1)
