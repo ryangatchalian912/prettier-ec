@@ -137,6 +137,13 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# Ignore folder information files
+**/.DS_Store
+**/desktop.ini
+
+# Ignore thumbnails created by Windows
+**/Thumbs.db
+
 ### Secrets management
 ### @see https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
 ### @see https://microsoft.github.io/code-with-engineering-playbook/source-control/secrets-management/
