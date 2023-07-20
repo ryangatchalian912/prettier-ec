@@ -167,3 +167,11 @@ dist
 
 ## Putty SSH private keys
 *.ppk
+
+## GPG secret and private keys
+**/*private*.txt
+**/*private*.gpg
+**/*private*.secret
+**/*secret*.txt
+**/*secret*.gpg
+**/*secret*.secret
