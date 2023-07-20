@@ -1,7 +1,61 @@
 {
+  "terminal.integrated.profiles.windows": {
+    "PowerShell -NoProfile": {
+      "source": "PowerShell",
+      "args": ["-NoProfile"]
+    }
+  },
+  "terminal.integrated.profiles.linux": {
+    "zsh (login)": {
+      "path": "zsh",
+      "args": ["-l"]
+    }
+  },
+  "terminal.integrated.profiles.osx": {
+    "zsh (login)": {
+      "path": "zsh",
+      "args": ["-l"]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.automationProfile.windows": {
+    "path": "pwsh.exe"
+  },
+  "terminal.integrated.defaultProfile.linux": "fish",
+  // Use a fully POSIX-compatible shell and avoid running a complex ~/.config/fish/config.fish
+  // for tasks and debug
+  "terminal.integrated.automationProfile.linux": {
+    "path": "/bin/sh"
+  },
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  // Use a fully POSIX-compatible shell and avoid running a complex ~/.config/fish/config.fish
+  // for tasks and debug
+  "terminal.integrated.automationProfile.osx": {
+    "path": "/bin/sh"
+  },
   "workbench.colorCustomizations": {
-    "activityBar.background": "#18340C",
-    "titleBar.activeBackground": "#224911",
-    "titleBar.activeForeground": "#F7FDF4"
-  }
+    "activityBar.background": "#0E2F4F",
+    "titleBar.activeBackground": "#14416E",
+    "titleBar.activeForeground": "#F6FAFD"
+  },
+  "files.defaultLanguage": "javascript",
+  "json.schemas": [
+    {
+      "fileMatch": ["/**/global.json"],
+      "url": "https://json.schemastore.org/global.json"
+    }
+  ],
+  "gitlens.integrations.enabled": true,
+  "gitlens.remotes": [
+    {
+      "regex": "https:\\/\\/(github\\.com)\\/(.+)",
+      "type": "GitHub",
+      "name": "prettier-ec",
+      "protocol": "https"
+    }
+  ],
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "WhiteSource Advise.Diff.BaseBranch": "master"
 }
