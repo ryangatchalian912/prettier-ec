@@ -147,26 +147,26 @@ dist
 
 ## SSL certificate rules
 # SSL certificate files
-*.crt
-*.cer
-*.ca-bundle
-*.p7b
-*.p7c
-*.p7s
-*.pem
+**/*.crt
+**/*.cer
+**/*.ca-bundle
+**/*.p7b
+**/*.p7c
+**/*.p7s
+**/*.pem
 
 # SSL keystore files
-*.key
-*.keystore
-*.jks
+**/*.key
+**/*.keystore
+**/*.jks
 
 # Combined certificate and key files
-*.p12
-*.pfx
-*.pem
+**/*.p12
+**/*.pfx
+**/*.pem
 
 ## Putty SSH private keys
-*.ppk
+**/*.ppk
 
 ## GPG secret and private keys
 **/*private*.txt
