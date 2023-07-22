@@ -15,6 +15,6 @@ fi
 echo "Initializing git-secrets..."
 git-secrets --register-aws > /dev/null
 
-# Scans the commit message
+# Determines if merging in a commit will introduce tainted history
 echo "Running git-secrets..."
-git-secrets --commit_msg_hook -- "$@"
+git-secrets --prepare_commit_msg_hook -- "$@"
