@@ -9,8 +9,13 @@ module.exports = {
   trailingComma: 'all',
   bracketSpacing: true,
   jsxBracketSameLine: false,
+  singleAttributePerLine: false,
   arrowParens: 'always',
   proseWrap: 'preserve',
   htmlWhitespaceSensitivity: 'css',
   endOfLine: 'lf',
+  xmlQuoteAttributes: 'preserve',
+  xmlSelfClosingSpace: true,
+  xmlSortAttributesByKey: false,
+  xmlWhitespaceSensitivity: 'ignore',
 };
