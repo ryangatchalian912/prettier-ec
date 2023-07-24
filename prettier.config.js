@@ -18,7 +18,6 @@ module.exports = {
   vueIndentScriptAndStyle: true,
   endOfLine: 'lf',
   embeddedLanguageFormatting: 'auto',
-  singleAttributePerLine: false,
   xmlQuoteAttributes: 'preserve',
   xmlSelfClosingSpace: true,
   xmlSortAttributesByKey: false,
