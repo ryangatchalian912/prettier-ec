@@ -2,6 +2,7 @@
   "name": "prettier-ec",
   "version": "1.0.0",
   "description": "Reference configuration for Prettier and EditorConfig. It also includes stylelint and ESLint integration.",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
