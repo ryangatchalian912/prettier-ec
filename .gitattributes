@@ -1,3 +1,6 @@
+# Enforce Linux-style line endings in files covered by Prettier
+* text=auto eol=lf
+
 # Define which files should be encrypted
 .env filter=git-crypt diff=git-crypt
 *.key filter=git-crypt diff=git-crypt
