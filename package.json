@@ -5,6 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "prettier-watch": "onchange \"**/*\" --exclude-path .gitignore -- prettier --write --ignore-unknown {{changed}}",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "commitmsg": "commit",
@@ -34,6 +35,7 @@
     "dotenv-extended": "^2.9.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
+    "onchange": "^7.1.0",
     "prettier": "^3.0.0"
   },
   "lint-staged": {
