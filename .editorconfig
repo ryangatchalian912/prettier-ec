@@ -49,7 +49,8 @@ indent_style = ignore
 indent_size = 2
 
 # @see https://github.com/airbnb/css
-[{*.css,*.less,*.sass,*.scss}]
+# @see https://github.com/postcss/sugarss
+[{*.css,*.less,*.sass,*.scss,*.sss}]
 indent_size = 2
 
 # @see https://google.github.io/styleguide/htmlcssguide.html
