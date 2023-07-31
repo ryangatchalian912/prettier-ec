@@ -1,4 +1,9 @@
 {
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#0E2F4F",
+    "titleBar.activeBackground": "#14416E",
+    "titleBar.activeForeground": "#F6FAFD"
+  },
   "terminal.integrated.profiles.windows": {
     "PowerShell -NoProfile": {
       "source": "PowerShell",
@@ -33,18 +38,7 @@
   "terminal.integrated.automationProfile.osx": {
     "path": "/bin/sh"
   },
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#0E2F4F",
-    "titleBar.activeBackground": "#14416E",
-    "titleBar.activeForeground": "#F6FAFD"
-  },
-  "files.defaultLanguage": "javascript",
-  "json.schemas": [
-    {
-      "fileMatch": ["/**/global.json"],
-      "url": "https://json.schemastore.org/global.json"
-    }
-  ],
+  "WhiteSource Advise.Diff.BaseBranch": "master",
   "gitlens.integrations.enabled": true,
   "gitlens.remotes": [
     {
@@ -54,8 +48,46 @@
       "protocol": "https"
     }
   ],
+  "files.defaultLanguage": "javascript",
+  "json.schemas": [
+    {
+      "fileMatch": ["/**/global.json"],
+      "url": "https://json.schemastore.org/global.json"
+    }
+  ],
+  // Set the default code formatting options
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": false,
+  // Enable code formatting per language
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[graphql]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[handlebars]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
   "[markdown]": {
     "files.trimTrailingWhitespace": false
-  },
-  "WhiteSource Advise.Diff.BaseBranch": "master"
+  }
 }
