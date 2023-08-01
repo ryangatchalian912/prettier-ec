@@ -49,8 +49,12 @@ indent_style = ignore
 indent_size = 2
 
 # @see https://github.com/airbnb/css
+# @see https://github.com/less/less-docs
 # @see https://github.com/postcss/sugarss
-[{*.css,*.less,*.sass,*.scss,*.sss}]
+# @see https://github.com/csstools/postcss-language
+# @see https://www.oliverdavies.uk/blog/using-pcss-extension-postcss-webpack-encore
+# @see https://twitter.com/PostCSS/status/661645290622083073
+[{*.css,*.less,*.sass,*.scss,*.sss,*.postcss,*.pcss}]
 indent_size = 2
 
 # @see https://google.github.io/styleguide/htmlcssguide.html
