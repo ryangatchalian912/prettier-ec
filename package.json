@@ -36,7 +36,9 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
     "onchange": "^7.1.0",
-    "prettier": "^3.0.0"
+    "prettier": "^3.0.0",
+    "stylelint": "^15.10.2",
+    "stylelint-config-standard": "^34.0.0"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
