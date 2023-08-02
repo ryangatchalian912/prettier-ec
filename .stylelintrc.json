@@ -1,5 +1,11 @@
 {
   "extends": ["stylelint-config-standard"],
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "customSyntax": "postcss-lit"
+    }
+  ],
   "reportDescriptionlessDisables": true,
   "reportInvalidScopeDisables": true,
   "reportNeedlessDisables": true
