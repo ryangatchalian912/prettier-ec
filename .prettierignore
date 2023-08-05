@@ -1,10 +1,16 @@
+# Environments
+venv/
+
 # Dependency directories
 node_modules/
 jspm_packages/
+vendor/
 
 # CI/CD artifacts
 build/
 coverage/
+dist/
+out/
 
 # husky/lint-staged hooks
 .husky/
