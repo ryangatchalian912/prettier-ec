@@ -7,4 +7,4 @@ build/
 coverage/
 
 # husky/lint-staged hooks
-husky/
+.husky/
