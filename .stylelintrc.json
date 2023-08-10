@@ -3,10 +3,40 @@
     "stylelint-config-standard-scss",
     "stylelint-config-recess-order"
   ],
+  "rules": {
+    "selector-max-id": 0,
+    "rule-empty-line-before": ["always", { "ignore": ["after-comment"] }],
+    "declaration-property-value-disallowed-list": { "/^border/": ["none"] }
+  },
   "overrides": [
     {
       "files": ["*.js"],
       "customSyntax": "postcss-lit"
+    },
+    {
+      "files": ["*.scss", "**/*.scss"],
+      "customSyntax": "postcss-scss",
+      "plugins": ["stylelint-config-standard-scss", "stylelint-order"],
+      "rules": {
+        "max-nesting-depth": 2,
+        "order/order": [
+          "custom-properties",
+          "dollar-variables",
+          "declarations",
+          {
+            "type": "at-rule",
+            "name": "include"
+          },
+          {
+            "type": "at-rule",
+            "name": "include",
+            "hasBlock": true
+          },
+          { "type": "at-rule" },
+          { "type": "at-rule", "hasBlock": true },
+          "rules"
+        ]
+      }
     }
   ],
   "reportDescriptionlessDisables": true,
