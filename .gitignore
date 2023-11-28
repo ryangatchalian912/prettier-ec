@@ -159,6 +159,11 @@ dist
 
 # Built Visual Studio Code Extensions
 *.vsix
+# Ignore version control dotfolders
+**/.git
+**/.svn
+**/CVS
+**/.hg
 
 # Ignore folder information files
 **/.DS_Store
