@@ -45,8 +45,12 @@
     "stylelint-config-standard-scss": "^10.0.0"
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx,mjs,cjs}": [
+    "**/*.{js,jsx,ts,tsx,cjs,mjs}": [
       "eslint --quiet --fix",
+      "prettier --write --ignore-unknown"
+    ],
+    "**/*.{css,less,sass,scss,sss,postcss,pcss}": [
+      "stylelint --quiet --fix",
       "prettier --write --ignore-unknown"
     ],
     "**/*": "prettier --write --ignore-unknown"
