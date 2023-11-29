@@ -53,7 +53,18 @@
       "stylelint --quiet --fix",
       "prettier --write --ignore-unknown"
     ],
-    "**/*": "prettier --write --ignore-unknown"
+    "**/*.{xml,svg}": [
+      "prettier --write --ignore-unknown"
+    ],
+    "**/*.{json,jsonp}": [
+      "prettier --write --ignore-unknown"
+    ],
+    "**/*.{yml,yaml}": [
+      "prettier --write --ignore-unknown"
+    ],
+    "**/*.{md}": [
+      "prettier --write --ignore-unknown"
+    ]
   },
   "dependencies": {
     "dotenv-extended": "^2.9.0"
