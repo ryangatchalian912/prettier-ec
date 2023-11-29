@@ -53,6 +53,10 @@
       "stylelint --quiet --fix",
       "prettier --write --ignore-unknown"
     ],
+    "**/*.{html,htm}": [
+      "stylelint --quiet --fix",
+      "prettier --write --ignore-unknown"
+    ],
     "**/*.{xml,svg}": [
       "prettier --write --ignore-unknown"
     ],
@@ -62,7 +66,7 @@
     "**/*.{yml,yaml}": [
       "prettier --write --ignore-unknown"
     ],
-    "**/*.{md}": [
+    "**/*.md": [
       "prettier --write --ignore-unknown"
     ]
   },
