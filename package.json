@@ -7,6 +7,10 @@
   "scripts": {
     "prettier-watch": "onchange \"**/*\" --exclude-path .gitignore -- prettier --write --ignore-unknown {{changed}}",
     "test": "jest --coverage --notify --detectOpenHandles",
+    "test:e2e": "playwright test",
+    "test:e2e-ui": "playwright test --ui",
+    "test:e2e-debug": "playwright test --debug",
+    "test:e2e-report": "playwright show-report",
     "prepare": "husky install",
     "commitmsg": "commit",
     "audit": "npm audit --registry=https://registry.npmjs.org/"
@@ -19,7 +23,9 @@
     "prettier",
     "editorconfig",
     "stylelint",
-    "eslint"
+    "eslint",
+    "jest",
+    "playwright"
   ],
   "author": "Ryan Gatchalian",
   "license": "MIT",
@@ -31,12 +37,20 @@
     "@commitlint/cli": "^17.8.1",
     "@commitlint/config-conventional": "^17.8.1",
     "@commitlint/prompt-cli": "^17.8.1",
+    "@eslint/js": "^8.55.0",
+    "@playwright/test": "^1.40.1",
     "@prettier/plugin-xml": "^3.2.2",
+    "@types/node": "^20.10.4",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
     "dotenv-extended": "^2.9.0",
+    "eslint": "^8.55.0",
     "husky": "^8.0.3",
     "jest": "^29.7.0",
     "lint-staged": "^13.3.0",
+    "node-notifier": "^10.0.1",
     "onchange": "^7.1.0",
+    "playwright": "^1.40.1",
     "postcss-lit": "^1.1.0",
     "prettier": "^3.1.1",
     "stylelint": "^15.11.0",
@@ -71,7 +85,8 @@
     ]
   },
   "dependencies": {
-    "dotenv-extended": "^2.9.0"
+    "dotenv-extended": "^2.9.0",
+    "node-notifier": "^10.0.1"
   },
   "engines": {
     "node": ">=18.17"

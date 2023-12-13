@@ -137,6 +137,12 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# Playwright Test Reports
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
 ### Visual Studio gitignore rules
 ### @see https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
@@ -211,3 +217,7 @@ dist
 **/*secret*.txt
 **/*secret*.gpg
 **/*secret*.secret
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
