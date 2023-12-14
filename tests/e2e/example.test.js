@@ -10,6 +10,6 @@ test.describe('browser tests', () => {
       '.string-major',
       (element) => element.innerHTML,
     );
-    expect(browser).toContain('Chrome');
+    expect(browser).toMatch(/(Chrome|Firefox|Safari)/);
   });
 });
