@@ -217,7 +217,3 @@ dist
 **/*secret*.txt
 **/*secret*.gpg
 **/*secret*.secret
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
