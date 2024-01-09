@@ -217,3 +217,4 @@ dist
 **/*secret*.txt
 **/*secret*.gpg
 **/*secret*.secret
+**/*secring.*
