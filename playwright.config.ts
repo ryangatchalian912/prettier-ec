@@ -32,7 +32,18 @@ export default defineConfig({
 
   globalTimeout: 60 * 60 * 1000,
   timeout: 5 * 60 * 1000,
-  expect: { timeout: 1 * 60 * 1000 },
+  expect: {
+    timeout: 1 * 60 * 1000,
+    toHaveScreenshot: {
+      // An acceptable amount of pixels that could be different, unset by default.
+      maxDiffPixels: 10,
+    },
+    toMatchSnapshot: {
+      // An acceptable ratio of pixels that are different to the
+      // total amount of pixels, between 0 and 1.
+      maxDiffPixelRatio: 0.1,
+    },
+  },
 
   /* Configure projects for major browsers */
   projects: [

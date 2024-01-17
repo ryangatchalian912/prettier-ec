@@ -12,6 +12,7 @@
     "test:e2e-debug": "playwright test --debug",
     "test:e2e-report": "playwright show-report",
     "test:e2e-report-merge": "playwright merge-reports --config=merge.config.ts ./blob-report",
+    "test:e2e-snapshot-update": "playwright test --update-snapshots",
     "prepare": "husky install",
     "commitmsg": "commit",
     "audit": "npm audit --registry=https://registry.npmjs.org/"
