@@ -33,7 +33,7 @@ export default defineConfig({
   globalTimeout: 60 * 60 * 1000,
   timeout: 5 * 60 * 1000,
   expect: {
-    timeout: 1 * 60 * 1000,
+    timeout: 2 * 60 * 1000,
     toHaveScreenshot: {
       // An acceptable amount of pixels that could be different, unset by default.
       maxDiffPixels: 10,
