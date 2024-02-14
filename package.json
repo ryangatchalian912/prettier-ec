@@ -41,7 +41,7 @@
     "@commitlint/prompt-cli": "^17.8.1",
     "@eslint/js": "^8.55.0",
     "@playwright/test": "^1.41.2",
-    "@prettier/plugin-xml": "^3.2.2",
+    "@prettier/plugin-xml": "^3.3.1",
     "@types/node": "^20.11.17",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
