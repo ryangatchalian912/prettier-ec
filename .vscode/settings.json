@@ -89,5 +89,6 @@
   },
   "[markdown]": {
     "files.trimTrailingWhitespace": false
-  }
+  },
+  "sarif-viewer.connectToGithubCodeScanning": "off"
 }
