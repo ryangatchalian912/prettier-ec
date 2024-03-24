@@ -1,0 +1,44 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=827846 to learn about workspace recommendations.
+  // Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+
+  // List of extensions which should be recommended for users of this workspace.
+  "recommendations": [
+    "dotenv.dotenv-vscode",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "stylelint.vscode-stylelint",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "moshfeu.compare-folders",
+    "alefragnani.bookmarks",
+    "csstools.postcss",
+    "ecmel.vscode-html-css",
+    "zignd.html-css-class-completion",
+    "xabikos.javascriptsnippets",
+    "goessner.mdmath",
+    "redhat.vscode-xml",
+    "dotjoshjohnson.xml",
+    "redhat.vscode-yaml",
+    "ms-playwright.playwright",
+    "msjsdiag.debugger-for-edge",
+    "ms-edgedevtools.vscode-edge-devtools",
+    "firefox-devtools.vscode-firefox-debug",
+    "christian-kohler.npm-intellisense",
+    "ms-vscode-remote.remote-containers",
+    "github.vscode-github-actions",
+    "github.vscode-pull-request-github",
+    "possan.nbsp-vscode",
+    "oouo-diogo-perdigao.docthis",
+    "wayou.vscode-todo-highlight",
+    "shardulm94.trailing-spaces",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "formulahendry.auto-complete-tag",
+    "vscode-icons-team.vscode-icons",
+    "stuart.unique-window-colors"
+  ],
+  // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
+  "unwantedRecommendations": []
+}
