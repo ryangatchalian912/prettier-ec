@@ -58,6 +58,7 @@
     "node-notifier": "^10.0.1",
     "nodemailer": "^6.9.13",
     "onchange": "^7.1.0",
+    "otpauth": "^9.2.2",
     "playwright": "^1.40.1",
     "postcss-lit": "^1.1.1",
     "prettier": "^3.2.5",
