@@ -62,6 +62,7 @@
     "playwright": "^1.40.1",
     "postcss-lit": "^1.1.1",
     "prettier": "^3.2.5",
+    "qrcode": "^1.5.3",
     "ssh2-sftp-client": "^10.0.3",
     "stylelint": "^15.11.0",
     "stylelint-config-recess-order": "^4.6.0",
