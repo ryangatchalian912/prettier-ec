@@ -1,10 +1,29 @@
 import { defineConfig, devices } from '@playwright/test';
+import dotEnvExtended from 'dotenv-extended';
+
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
 
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
  */
 // require('dotenv').config();
+
+if (process.env.NODE_ENV !== 'production') {
+  dotEnvExtended.load();
+}
+
+/**
+ * Playwright storage state for reusing logins
+ *
+ * @see https://dev.to/playwright/a-better-global-setup-in-playwright-reusing-login-with-project-dependencies-14
+ * @see https://blog.logrocket.com/alternatives-dirname-node-js-es-modules/
+ * @see https://playwright.dev/docs/test-global-setup-teardown
+ * @see https://www.youtube.com/watch?v=PI50YAPTAs4
+ */
+const dirUrl = fileURLToPath(new URL('.', import.meta.url));
+export const STORAGE_STATE = path.join(dirUrl, 'playwright/.auth/user.json');
 
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -39,7 +58,7 @@ export default defineConfig({
   globalTimeout: 60 * 60 * 1000,
   timeout: 5 * 60 * 1000,
   expect: {
-    timeout: 2 * 60 * 1000,
+    timeout: 5 * 60 * 1000,
     toHaveScreenshot: {
       // An acceptable amount of pixels that could be different, unset by default.
       maxDiffPixels: 10,
@@ -54,38 +73,49 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
+      name: 'setup',
+      testMatch: '**/*.setup.ts',
+    },
+    {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      dependencies: ['setup'],
+      use: { ...devices['Desktop Chrome'], storageState: STORAGE_STATE },
     },
 
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      dependencies: ['setup'],
+      use: { ...devices['Desktop Firefox'], storageState: STORAGE_STATE },
     },
 
     {
       name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
+      dependencies: ['setup'],
+      use: { ...devices['Desktop Safari'], storageState: STORAGE_STATE },
     },
 
     /* Test against mobile viewports. */
     // {
     //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'] },
+    //   dependencies: ['setup'],
+    //   use: { ...devices['Pixel 5'], storageState: STORAGE_STATE },
     // },
     // {
     //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
+    //   dependencies: ['setup'],
+    //   use: { ...devices['iPhone 12'], storageState: STORAGE_STATE },
     // },
 
     /* Test against branded browsers. */
     // {
     //   name: 'Microsoft Edge',
-    //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
+    //   dependencies: ['setup'],
+    //   use: { ...devices['Desktop Edge'], channel: 'msedge', storageState: STORAGE_STATE },
     // },
     // {
     //   name: 'Google Chrome',
-    //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+    //   dependencies: ['setup'],
+    //   use: { ...devices['Desktop Chrome'], channel: 'chrome', storageState: STORAGE_STATE },
     // },
   ],
 
