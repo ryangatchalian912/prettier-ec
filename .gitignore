@@ -143,6 +143,9 @@ dist
 /blob-report/
 /playwright/.cache/
 
+# Playwright Storage State
+/playwright/.auth/
+
 ### Visual Studio gitignore rules
 ### @see https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
