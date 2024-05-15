@@ -17,6 +17,7 @@
     "prepare": "husky install",
     "commitmsg": "commit",
     "audit": "npm audit --registry=https://registry.npmjs.org/",
+    "autorest": "autorest",
     "autorest:help": "autorest --help",
     "autorest:latest": "autorest --latest",
     "autorest:reset": "autorest --reset"
