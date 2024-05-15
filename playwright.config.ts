@@ -29,25 +29,33 @@ export const STORAGE_STATE = path.join(dirUrl, 'playwright/.auth/user.json');
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
+  // Look for test files in the "tests" directory, relative to this configuration file.
   testDir: './tests/e2e',
-  /* Run tests in files in parallel */
+
+  // Run all tests in parallel.
   fullyParallel: true,
-  /* Fail the build on CI if you accidentally left test.only in the source code. */
+
+  // Fail the build on CI if you accidentally left test.only in the source code.
   forbidOnly: !!process.env.CI,
-  /* Retry on CI only */
+
+  // Retry on CI only.
   retries: process.env.CI ? 2 : 0,
-  /* Opt out of parallel tests on CI. */
+
+  // Opt out of parallel tests on CI.
   workers: process.env.CI ? 1 : undefined,
-  /* Limit the number of failures on CI to save resources */
+
+  // Limit the number of failures on CI to save resources.
   maxFailures: process.env.CI ? 10 : undefined,
-  /* Reporter to use. See https://playwright.dev/docs/test-reporters */
+
+  // Reporter to use. See https://playwright.dev/docs/test-reporters
   reporter: process.env.CI ? 'blob' : 'html',
-  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+
+  // Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions.
   use: {
-    /* Base URL to use in actions like `await page.goto('/')`. */
+    // Base URL to use in actions like `await page.goto('/')`.
     // baseURL: 'http://127.0.0.1:3000',
 
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+    // Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer
     trace: 'on-first-retry',
     video: {
       mode: 'on-first-retry',
@@ -70,7 +78,7 @@ export default defineConfig({
     },
   },
 
-  /* Configure projects for major browsers */
+  // Configure projects for major browsers.
   projects: [
     {
       name: 'setup',
@@ -94,7 +102,7 @@ export default defineConfig({
       use: { ...devices['Desktop Safari'], storageState: STORAGE_STATE },
     },
 
-    /* Test against mobile viewports. */
+    // Test against mobile viewports.
     // {
     //   name: 'Mobile Chrome',
     //   dependencies: ['setup'],
@@ -106,7 +114,7 @@ export default defineConfig({
     //   use: { ...devices['iPhone 12'], storageState: STORAGE_STATE },
     // },
 
-    /* Test against branded browsers. */
+    // Test against branded browsers.
     // {
     //   name: 'Microsoft Edge',
     //   dependencies: ['setup'],
@@ -119,7 +127,7 @@ export default defineConfig({
     // },
   ],
 
-  /* Run your local dev server before starting the tests */
+  // Run your local dev server before starting the tests.
   // webServer: {
   //   command: 'npm run start',
   //   url: 'http://127.0.0.1:3000',
