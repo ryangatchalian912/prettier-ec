@@ -125,6 +125,77 @@ export default defineConfig({
     //   dependencies: ['setup'],
     //   use: { ...devices['Desktop Chrome'], channel: 'chrome', storageState: STORAGE_STATE },
     // },
+
+    /**
+     * LambdaTest Config
+     *
+     * name in the format:
+     *   - browserName:browserVersion:platform@lambdatest
+     *
+     * Browsers allowed:
+     *   - `Chrome`
+     *   - `MicrosoftEdge`
+     *   - `pw-chromium`
+     *   - `pw-firefox`
+     *   - `pw-webkit`
+     *
+     * Use additional configuration options provided by Playwright if required:
+     * @see https://playwright.dev/docs/api/class-testconfig
+     */
+    {
+      name: 'chrome:latest:MacOS Catalina@lambdatest',
+      dependencies: ['setup'],
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: STORAGE_STATE,
+        viewport: { width: 1920, height: 1080 },
+      },
+    },
+    {
+      name: 'chrome:latest:Windows 10@lambdatest',
+      dependencies: ['setup'],
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: STORAGE_STATE,
+        viewport: { width: 1920, height: 1080 },
+      },
+    },
+    {
+      name: 'MicrosoftEdge:latest:Windows 10@lambdatest',
+      dependencies: ['setup'],
+      use: {
+        ...devices['iPhone 12 Pro Max'],
+        storageState: STORAGE_STATE,
+        viewport: { width: 1920, height: 1080 },
+      },
+    },
+    {
+      name: 'pw-chromium:latest:Windows 10@lambdatest',
+      dependencies: ['setup'],
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: STORAGE_STATE,
+        viewport: { width: 1920, height: 1080 },
+      },
+    },
+    {
+      name: 'pw-firefox:latest:Windows 10@lambdatest',
+      dependencies: ['setup'],
+      use: {
+        ...devices['Desktop Firefox'],
+        storageState: STORAGE_STATE,
+        viewport: { width: 1920, height: 1080 },
+      },
+    },
+    {
+      name: 'pw-webkit:latest:Windows 10@lambdatest',
+      dependencies: ['setup'],
+      use: {
+        ...devices['Desktop Safari'],
+        storageState: STORAGE_STATE,
+        viewport: { width: 1920, height: 1080 },
+      },
+    },
   ],
 
   // Run your local dev server before starting the tests.
